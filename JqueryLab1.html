@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <link href="index.css" rel="stylesheet" type="text/css" />
+
+
+        <div class='table'>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">1</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">2</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">3</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">4</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">5</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">6</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">7</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">8</div>
+    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">9</div>
+    </div>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Reserve Your Table</h1>
+       <hr>
+      <label for="Name"><b>Legal Name</b></label>
+      <input type="text" placeholder="Enter You Whole Name" name="wholename" required>
+
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone" name="phone" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+
+
+
+ <script src="index.js"></script>
+
+   </body>
+</html>
