@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-      <link href="index.css" rel="stylesheet" type="text/css" />
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>repl.it</title>
+ <link href="index.css" rel="stylesheet" type="text/css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+   <link href="index.css" rel="stylesheet" type="text/css" />
 
 
-        <div class='table'>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">1</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">2</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">3</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">4</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">5</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">6</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">7</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">8</div>
-    <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">9</div>
-    </div>
+  <h1 style="text-align:center">Table Finder</h1>
+  <h3 style="text-align:center">Pick your table now</h3>
+
+
+     <div class='table'>
+     <div class="row">
+       <div >1</div>
+       <div>2</div>
+       <div>3</div>
+     </div>
+     <div class="row">
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>
+     </div>
+     <div class="row">
+       <div>7</div>
+       <div>8</div>
+       <div>9</div>
+     </div>
+
+
+
+ </div>
 
 
 <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
-      <h1>Reserve Your Table</h1>
-       <hr>
-      <label for="Name"><b>Legal Name</b></label>
-      <input type="text" placeholder="Enter You Whole Name" name="wholename" required>
+<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+<form class="modal-content" action="/action_page.php">
+ <div class="container">
+   <h1>Reserve Your Table: Table Number: <span></span></h1>
 
-      <label for="phone"><b>Phone Number</b></label>
-      <input type="text" placeholder="Enter Phone" name="phone" required>
+    <hr>
+   <label for="Name"><b>Legal Name</b></label>
+   <input type="text" placeholder="Enter You Whole Name" name="wholename" required>
 
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+   <label for="phone"><b>Phone Number</b></label>
+   <input type="text" placeholder="Enter Phone" name="phone" required>
 
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
-    </div>
-  </form>
+   <label for="email"><b>Email</b></label>
+   <input type="text" placeholder="Enter Email" name="email" required>
+
+   <div class="dropdown">
+<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">How many are in your party?
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+ <li><a href="#">1</a></li>
+ <li><a href="#">2</a></li>
+ <li><a href="#">3</a></li>
+</ul>
+</div>
+
+   <div class="clearfix">
+     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+     <button type="submit" class="signupbtn">Reserve</button>
+   </div>
+ </div>
+</form>
+</div>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="index.js"></script>
 
- <script src="index.js"></script>
-
-   </body>
+</body>
 </html>

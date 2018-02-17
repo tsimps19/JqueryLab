@@ -1,24 +1,29 @@
-
 .table {
+  max-width: 500px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.row {
 display: flex;
-border: 1px solid red;
-height: 500px;
+height: 200px;
 align-items: center;
 justify-content: space-around;
-flex-wrap: wrap-reverse;
 
 
 }
-.table div {
 
-    background-color: #4CAF50;
+.row div {
+ background-color: green;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
     cursor: pointer;
-    width: 100%;
     opacity: 0.9;
+    width: 100px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
 
 }
 
@@ -27,7 +32,6 @@ flex-wrap: wrap-reverse;
 
 }
 
-<style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
 /* Full-width input fields */
@@ -38,11 +42,13 @@ input[type=text], input[type=pho] {
     display: inline-block;
     border: none;
     background: #f1f1f1;
+
+
 }
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=pho]:focus {
-    background-color: #ddd;
+    background-color: #e0bebe;
     outline: none;
 }
 
@@ -59,19 +65,12 @@ button {
 }
 
 button:hover {
-    opacity:1;
+    opacity:20;
 }
 
-/* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
     background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
 }
 
 /* Add padding to container elements */
@@ -81,8 +80,8 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    display: none;
+    position: fixed;
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
