@@ -10,6 +10,8 @@
 
 </head>
 <body>
+
+
    <link href="index.css" rel="stylesheet" type="text/css" />
 
 
@@ -19,7 +21,7 @@
 
      <div class='table'>
      <div class="row">
-       <div >1</div>
+       <div>1</div>
        <div>2</div>
        <div>3</div>
      </div>
@@ -34,48 +36,38 @@
        <div>9</div>
      </div>
 
-
-
  </div>
 
 
 <div id="id01" class="modal">
 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-<form class="modal-content" action="/action_page.php">
+<div class="modal-content">
  <div class="container">
    <h1>Reserve Your Table: Table Number: <span></span></h1>
 
     <hr>
    <label for="Name"><b>Legal Name</b></label>
-   <input type="text" placeholder="Enter You Whole Name" name="wholename" required>
+   <input id="one" type="text" placeholder="Enter You Whole Name" name="wholename" required>
 
    <label for="phone"><b>Phone Number</b></label>
-   <input type="text" placeholder="Enter Phone" name="phone" required>
+   <input id="two" type="text" placeholder="Enter Phone" name="phone" required>
 
-   <label for="email"><b>Email</b></label>
-   <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="partysize"><b>Part Size</b></label>
+   <input id="three" type="text" placeholder="size" name="size" required>
 
-   <div class="dropdown">
-<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">How many are in your party?
-<span class="caret"></span></button>
-<ul class="dropdown-menu">
- <li><a href="#">1</a></li>
- <li><a href="#">2</a></li>
- <li><a href="#">3</a></li>
-</ul>
-</div>
 
    <div class="clearfix">
      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-     <button type="submit" class="signupbtn">Reserve</button>
+     <button class="savebtn">Reserve</button>
    </div>
  </div>
-</form>
+</div>
 </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="index.js"></script>
+
 
 </body>
 </html>
